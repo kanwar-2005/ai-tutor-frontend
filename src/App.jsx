@@ -40,7 +40,7 @@ export default function App() {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:8000/api/ask', {
+      const response = await fetch('https://ai-tutor-backend-7u7c.onrender.com/api/ask', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question: currentQuestion }),
